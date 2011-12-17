@@ -14,7 +14,7 @@
 -->
 				<select name="vaeosa">
 				<c:forEach items="${vaeosad}" var="vaeosa">
-					<option value="${vaeosa.kood}" label="${vaeosa.kood}" />
+					<option value="${vaeosa.id}" label="${vaeosa.kood}" />
 				</c:forEach>
 				</select>
 			</th>
