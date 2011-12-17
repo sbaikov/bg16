@@ -36,9 +36,9 @@ public class AruandeController {
 		model.addAttribute("vaeosa", vaeosa);
 		model.addAttribute("kp", kp);
 
-		Session sess = ((Session) BaseEntity.entityManager().getDelegate());
-		sess.disableFilter("suletud");
-		sess.enableFilter("aeg").setParameter("aeg", kp);
+//		Session sess = ((Session) BaseEntity.entityManager().getDelegate());
+//		sess.disableFilter("suletud");
+//		sess.enableFilter("aeg").setParameter("aeg", kp);
 		
 		List<AruandePiiriloik> apl = new ArrayList<AruandePiiriloik>();
 		for(Piiriloik p : Piiriloik.find(vaeosa, kp))
